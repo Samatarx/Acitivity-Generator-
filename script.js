@@ -21,16 +21,16 @@ generateActivity();
 // }
 
 using.then();
-function generateJoke() {
+function generateActivity() {
   const config = {
     headers: {
       Accept: "application/json",
     },
   };
 
-  fetch("https://icanhazdadjoke.com", config)
+  fetch("http://www.boredapi.com/api/activity/", config)
     .then((response) => response.json())
     .then((data) => {
-      jokeEl.innerHTML = data.joke;
+        activityEl.innerHTML = data.activity;
     });
 }
