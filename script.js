@@ -28,7 +28,7 @@ function generateActivity() {
     },
   };
 
-  fetch("http://www.boredapi.com/api/activity/", config)
+  fetch("https://www.boredapi.com/api/activity/", config)
     .then((response) => response.json())
     .then((data) => {
         activityEl.innerHTML = data.activity;
