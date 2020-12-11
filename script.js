@@ -20,7 +20,7 @@ generateActivity();
 //   activityEl.innerHTML = data.activity
 // }
 
-using.then();
+//using.then();
 function generateActivity() {
   const config = {
     headers: {
